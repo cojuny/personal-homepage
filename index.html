@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junyoung WANG's Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container" id="container" onscroll="scrolling()">
+
+        <div class="topbar">
+            <h2 class="logo">Daniel.W</h2>
+            <div id="slidenav" class="slidenav">
+                <a href="#" id="navmain" style="text-decoration: underline" onclick="scrollToPosition(0)">Main</a>
+                <a href="#" id="navbackground" onclick="scrollToPosition(1)">Background</a>
+                <a href="#" id="navprojects" onclick="scrollToPosition(2)">Projects</a>
+                <a href="#" id="navcats" onclick="scrollToPosition(3)">Cats</a>
+            </div>
+        </div>
+
+
+
+        <div class="slides" id="main">
+            <img src="img/profile_pic.jpg" alt="profile_pic">
+            <div class="textbox">
+                <h2>I'm Junyoung Wang. <br> A Student</h2>
+                <h2 style="color: rgb(153, 153, 153);">from Republic of Korea.</h2>
+                <p>There is a lot to introduce to you about me, please scroll down for more!</p>
+            </div>
+        </div>
+
+        <div class="slides" id="background">
+            <div class="timeline">
+                <div class="event up">
+                    <p class="year">1999</p>
+                    <div class="detail">- Borned in Seoul, South Korea.</div>
+                </div>
+                <div class="event down">
+                    <p class="year">2007</p>
+                    <div class="detail">- Moved to Xiamen, China. <br> - Enrolled at a local primary school. <br> -
+                        Start to learn Mandarin.</div>
+                </div>
+                <div class="event up">
+                    <p class="year">2012</p>
+                    <div class="detail">- Enrolled at an International middle school. <br> - Start to learn English.
+                    </div>
+                </div>
+                <div class="event down">
+                    <p class="year">2018</p>
+                    <div class="detail">- Graduated as IB Diploma Program. <br> - Moved to Hong Kong. <br> - Enrolled at
+                        The Hong Kong Polytechnic University.</div>
+                </div>
+                <div class="event up">
+                    <p class="year">2021</p>
+                    <div class="detail">- Deferred the study. <br> - Joined the conscription of Korean Army.</div>
+                </div>
+
+                <div class="event down">
+                    <p class="year">2023</p>
+                    <div class="detail">- Discharged from Army, as Sergeant. <br> - Resumed the undergraduate study.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <ul style="list-style-type: none;">
+                    <li><i class="fa fa-info"></i>Name: Junyoung WANG, Daniel</li>
+                    <li><i class="fa fa-birthday-cake"></i>Age: 25</li>
+                    <li><i class="fa fa-newspaper-o"></i>CV: <a href="#">xxxxxxxxx.pdf</a></li>
+                    <li><i class="fa fa-mobile-phone"></i>Contact: +852 0000-0000</li>
+                    <li><i class="fa fa-globe"></i>Language: Korean, Mandarin, English</li>
+                </ul>
+                <div class="image">
+                    <img src="img/profile_pic.jpg" alt="profile_pic">
+                </div>
+            </div>
+        </div>
+
+        <div class="slides" id="projects">
+            <div class="project">
+                <a href="https://github.com/cojuny/animal-chess">
+                    <div class="content">
+                        <p>Animal Chess</p>
+                        <div class="image">
+                            <img src="img/animal_chess.png" alt="demo"> </img>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/cojuny/apt-pdf">
+                    <div class="content">
+                        <p>APT-PDF</p>
+
+                        <div class="image">
+                            <img src="img/apt-pdf.png" alt="demo"> </img>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/cojuny/helloworld-ci">
+                    <div class="content">
+                        <p>Helloworld CI</p>
+                        <div class="image">
+                            <img src="img/helloworld_ci.png" alt="demo"> </img>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/cojuny/quotecraft-docker">
+                    <div class="content">
+                        <p>Quotecraft</p>
+                        <div class="image">
+                            <img src="img/quotecraft.gif" alt="demo"> </img>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://github.com/cojuny/tkinter-projects">
+                    <div class="content">
+                        <p>Tkinter Projects</p>
+                        <div class="image">
+                            <img src="img/tkinter.gif" alt="demo"> </img>  
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="slides" id="cats">
+            <img src="img/cats_together.jpg" alt="cat_together" usemap="#image-map">
+            <map name="image-map">
+                <area target="_blank" alt="Rumi" title="Rumi" href="rumi.html"
+                    coords="603,393,575,523,348,902,637,906,676,615,780,561,784,490,731,454,667,443" shape="poly">
+                <area target="_blank" alt="Naru" title="Naru" href="naru.html"
+                    coords="701,309,707,376,717,409,743,454,784,482,804,493,814,540,1040,430,1050,333,1032,333,864,205,790,237"
+                    shape="poly">
+            </map>
+            <p>**Click one cat for more details!</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
